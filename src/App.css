@@ -12,7 +12,6 @@
 
 
 .crossword {
-  background-color: pink;
   grid-row: 1;
 }
 
@@ -26,13 +25,11 @@
 .row {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  background-color: coral;
   margin: 0;
 }
 
 .cell {
   display:flex;
-  background-color: cyan;
   border: solid 1px #000;
   aspect-ratio: 1;
   margin-left: -1px;
@@ -49,7 +46,6 @@
 }
 
 .cell input:focus {
-  background-color: coral;
   border: none;
   outline: none;
 }
@@ -63,4 +59,8 @@
   position: relative;
   float: left;
   left: calc(0.2vw);
+}
+
+.resources {
+text-align: left;
 }
