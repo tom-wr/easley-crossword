@@ -1,0 +1,66 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.crossword-section {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+
+.crossword {
+  background-color: pink;
+  grid-row: 1;
+}
+
+.clues {
+  padding-left: 100px;
+  text-align: left;
+  grid-row: 1;
+  font-size: large;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  background-color: coral;
+  margin: 0;
+}
+
+.cell {
+  display:flex;
+  background-color: cyan;
+  border: solid 1px #000;
+  aspect-ratio: 1;
+  margin-left: -1px;
+  margin-bottom: -1px;
+}
+
+.cell input {
+  width: 100%;
+  border: none;
+  background: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: calc(3vw);
+}
+
+.cell input:focus {
+  background-color: coral;
+  border: none;
+  outline: none;
+}
+
+.black {
+  background-color: black;
+}
+
+.clue-number {
+  font-size: calc(1vw);
+  position: relative;
+  float: left;
+  left: calc(0.2vw);
+}
